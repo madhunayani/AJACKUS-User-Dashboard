@@ -2,7 +2,6 @@
 
 A sleek and responsive user management dashboard built with React, Vite, and modern CSS. This project, created for the Ajackus front-end assignment, demonstrates a complete and polished solution for handling user data with full CRUD functionality.
 
-**✨ Deployed Link:** [[**https://ajackus-user-dashboard-your-name.vercel.app**](https://ajackus-user-dashboard-your-name.vercel.app)](https://ajackus-user-dashboard-your-name.vercel.app) *(Replace with your actual Vercel link!)*
 
 ---
 
