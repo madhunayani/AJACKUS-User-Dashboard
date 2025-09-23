@@ -1,0 +1,79 @@
+/* src/index.css */
+
+/* 1. Import a professional font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* 2. Define a modern color palette */
+/* src/index.css */
+
+/* ... keep the @import url(...) as is ... */
+
+:root {
+  /* UPDATED: New professional navy blue gradient */
+  --gradient-start: #232526; /* Dark slate */
+  --gradient-end: #414345;   /* Grayish blue */
+  
+  /* You can also try this more vibrant blue gradient */
+  /* --gradient-start: #141E30; */ /* Midnight Blue */
+  /* --gradient-end: #243B55; */   /* Deep Blue */
+
+  --primary-accent: #5DADE2; /* A lighter blue for contrast */
+  --success-color: #58D68D;
+  --danger-color: #EC7063;
+  --white: #ffffff;
+  --text-dark: #EAECEE; /* Lighter text for the dark background */
+  --text-light: #ABB2B9;
+  --border-color: #566573;
+  --card-bg: rgba(43, 43, 43, 0.85); /* Darker, semi-transparent card background */
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  /* ... rest of body styles ... */
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  /* UPDATED: text color for dark theme */
+  color: var(--text-dark); 
+  background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+  height: 100vh;
+  overflow-x: hidden;
+}
+/* 3. Container for layout consistency */
+
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+/* 4. Global button styles (we'll override them for specifics) */
+button {
+  cursor: pointer;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* 5. Utility classes */
+.btn-primary {
+  background-color: var(--primary-accent);
+  color: var(--white);
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.btn-danger {
+  background-color: var(--danger-color);
+  color: var(--white);
+}
+
+.btn-edit {
+  background-color: var(--success-color);
+  color: var(--white);
+}
